@@ -23,4 +23,10 @@ flutter:
   uses-material-design: true
 
   assets:
-    - assets/
+    - assets/globe.png
+    - assets/flags/france.png
+    - assets/flags/tunisia.png
+    - assets/flags/brazil.png
+    - assets/flags/italy.png
+    - assets/flags/canada.png
+    - assets/flags/australia.png

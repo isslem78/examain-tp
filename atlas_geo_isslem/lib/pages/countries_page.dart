@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import '../welcome_page.dart'; // chemin vers WelcomePage
+import '../welcome_page.dart';
+import '../about_page.dart'; // ← nouveau import
 
 class CountriesPage extends StatelessWidget {
   const CountriesPage({super.key});
@@ -48,6 +49,17 @@ class CountriesPage extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (_) => const WelcomePage()),
+                );
+              },
+            ),
+
+            ListTile(
+              leading: const Icon(Icons.info_outline),
+              title: const Text("À propos"),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (_) => const AboutPage()),
                 );
               },
             ),
